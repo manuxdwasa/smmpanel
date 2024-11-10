@@ -1,0 +1,293 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #333; /* Fondo negro carbón global */
+}
+
+/* Barra de navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con algo de transparencia */
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* Estilos para el icono de Telegram */
+.telegram-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.telegram-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Hace el icono circular */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar el icono */
+}
+
+.telegram-icon:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Aumenta la sombra en hover */
+}
+
+
+
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Video de fondo */
+.video-container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #333; /* Fondo negro carbon */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+  transform: scale(1.1);
+}
+
+/* Tres secciones debajo del video (Visibility, Reputation, Confidence) */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #333;
+}
+
+.feature-item {
+  background-color: #444;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* Mantiene la proporción original de la imagen */
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white; /* Aseguramos que los títulos sean blancos */
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Sección de "Hundreds of services for popular social networks" */
+.services {
+  background-color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+}
+
+.service-cards h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Sección adicional de servicios */
+.additional-services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #333; /* Fondo igual que las otras secciones */
+}
+
+.service-box {
+  background-color: #333; /* Fondo igual que las otras secciones */
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white; /* Títulos en blanco */
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Estilo para las imágenes inferiores en los servicios adicionales */
+.service-bottom-image {
+  width: 100%;
+  height: auto;
+  margin-top: 15px; /* Espacio entre la descripción y la imagen */
+  border-radius: 5px; /* Opcional: para hacer las esquinas redondeadas */
+}
+
+
+
+  .additional-services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
